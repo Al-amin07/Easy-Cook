@@ -1,0 +1,7 @@
+.one{
+    
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
