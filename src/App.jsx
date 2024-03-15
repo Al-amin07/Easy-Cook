@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Banner from './Components/Banner';
+import Items from './Components/Items';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
      
       <Navbar></Navbar>
       <Banner></Banner>
+      <Items></Items>
      
     </>
   )
