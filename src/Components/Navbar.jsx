@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          <a className="btn btn-ghost text-3xl">Easy Cook</a>
+          <a className="btn btn-ghost text-lg lg:text-3xl">Easy Cook</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -40,7 +40,7 @@ const Navbar = () => {
             <input type="text" className="grow" placeholder="Search" />
           </label>
 
-          <img className='ml-4' src={profile} alt="" />
+          <img className='ml-4 hidden lg:block' src={profile} alt="" />
         </div>
       </div>
     </div>

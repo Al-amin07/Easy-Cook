@@ -22,7 +22,7 @@ const WantToCook = ({ wantCooks, handleRemoveCard }) => {
 
 
   return (
-    <div className="mt-12 w-[480px] border-2 p-2 rounded-2xl">
+    <div className="mt-12 lg:w-[480px] border-2 p-2 rounded-2xl">
       <h2 className="w-5/6 mx-auto text-2xl font-semibold text-center pb-2 border-b-2 mb-5">
         Want to cook: {wantCooks.length}
       </h2>

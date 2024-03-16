@@ -45,15 +45,15 @@ const Items = () => {
 
   return (
     <div>
-      <h2 className="text-4xl font-bold text-center">Our Recipes</h2>
-      <p className="w-4/6 mx-auto text-center">
+      <h2 className="text-2xl lg:text-4xl font-bold text-center mb-3">Our Recipes</h2>
+      <p className="lg:w-4/6 mx-auto text-center">
         Food blogs with a unique niche angle tend to perform better on the SEO
         front because when people search for a recipe or cooking technique that
         they’re interested in,{" "}
       </p>
-      <div className="flex gap-3">
+      <div className="flex flex-col-reverse lg:flex-row gap-3">
         {/* Card */}
-        <div className="grid grid-cols-2 gap-8 w-[800px] mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-[800px] mt-12">
           {items.map((item) => (
             <Item
               item={item}
