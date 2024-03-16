@@ -10,8 +10,8 @@ const Item = ({ item , handleWantCook}) => {
     short_description,
     ingredients,
     preparing_time,
-    calories,
-    recipe_id
+    calories
+    
   } = item;
   return (
     <div className="p-6 border-2 rounded-xl space-y-3">

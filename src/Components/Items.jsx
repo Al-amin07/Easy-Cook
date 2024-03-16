@@ -10,13 +10,21 @@ const Items = () => {
 
   const [wantCooks, setWantCook] = useState([]);
   
+  
+
+  const handleRemoveCard = (item) => {
+     const newArray = wantCooks.filter(cooks => cooks.recipe_id !== item.recipe_id);
+    setWantCook(newArray);
+    console.log(wantCooks)
+    
+  }
 
   const handleWantCook = (item) => {
   
     const exits = wantCooks.find(cook => cook.recipe_id === item.recipe_id);
-    console.log(exits)
+    
     if(exits){
-        toast("Wow so easy !")
+        toast("Already Exits")
     }
     else{
         const newArray = [...wantCooks, item];
@@ -56,7 +64,9 @@ const Items = () => {
         </div>
         {/* Want To Cook */}
         <div>
-          <WantToCook wantCooks={wantCooks}></WantToCook>
+          <WantToCook 
+          handleRemoveCard={handleRemoveCard}
+          wantCooks={wantCooks}></WantToCook>
         </div>
       </div>
       <ToastContainer />
