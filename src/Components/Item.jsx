@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import time from '../images/time.png';
 import cal from '../images/cal .png'
 
-const Item = ({ item }) => {
-  console.log(item);
+const Item = ({ item , handleWantCook}) => {
+  
   const {
     recipe_image,
     recipe_name,
@@ -11,11 +11,12 @@ const Item = ({ item }) => {
     ingredients,
     preparing_time,
     calories,
+    recipe_id
   } = item;
   return (
     <div className="p-6 border-2 rounded-xl space-y-3">
       <div className="">
-        <img className="w-full h-64 rounded-2xl" src={recipe_image} alt="" />
+        <img className="w-full h-48 rounded-2xl" src={recipe_image} alt="" />
       </div>
       <h2 className="text-xl font-semibold">{recipe_name}</h2>
       <p className="border-b-2 pb-3">{short_description}</p>
@@ -35,13 +36,14 @@ const Item = ({ item }) => {
             <p>{calories}</p>
         </div>
       </div>
-      <button className="btn rounded-full text-lg bg-[#0BE58A] font-medium">Want To Cook</button>
+      <button onClick={() => handleWantCook(item)} className="btn rounded-full text-lg bg-[#0BE58A] font-medium">Want To Cook</button>
     </div>
   );
 };
 
 Item.propTypes = {
   item: PropTypes.object,
+  handleWantCook: PropTypes.func
 };
 
 export default Item;

@@ -12,8 +12,8 @@ function App() {
      
       <Navbar></Navbar>
       <Banner></Banner>
-      <Items></Items>
-     
+      <Items ></Items>
+      
     </>
   )
 }
