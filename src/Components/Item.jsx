@@ -16,7 +16,7 @@ const Item = ({ item , handleWantCook}) => {
   return (
     <div className="p-6 border-2 rounded-xl space-y-3">
       <div className="">
-        <img className="w-full h-48 rounded-2xl" src={recipe_image} alt="" />
+        <img className="w-full h-64 lg:h-48 rounded-2xl" src={recipe_image} alt="" />
       </div>
       <h2 className="text-xl font-semibold">{recipe_name}</h2>
       <p className="border-b-2 pb-3">{short_description}</p>
